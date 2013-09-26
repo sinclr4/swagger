@@ -1,0 +1,77 @@
+{
+   "basePath":"http://api.2445580338212.proxy.3scale.net:80",
+   "apiVersion":"v1",
+   "apis":[
+      {
+         "path":"/api/referencedata/organisationtypes",
+         "description":"",
+         "operations":[
+            {
+               "httpMethod":"GET",
+               "nickname":"GetAllOrganisationTypes",
+               "responseClass":"ApiResponse<OrganisationTypes>",
+               "summary":"Organisation types available in the service",
+               "notes":"No Documentation Found.",
+               "group":"words",
+               "parameters":[
+                  {
+                     "name":"user_key",
+                     "description":"Your access application key",
+                     "dataType":"string",
+                     "paramType":"header",
+                     "threescale_name":"user_keys",
+                     "required":true
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "path":"/api/referencedata/services",
+         "description":"",
+         "operations":[
+            {
+               "httpMethod":"GET",
+               "nickname":"GetAllServices",
+               "summary":"Available Services",
+               "notes":"No Documentation Found.",
+               "group":"words",
+               "parameters":[
+                  {
+                     "name":"user_key",
+                     "description":"Your access application key",
+                     "dataType":"string",
+                     "paramType":"header",
+                     "threescale_name":"user_keys",
+                     "required":true
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "path":"/api/referencedata/placenames",
+         "description":"",
+         "operations":[
+            {
+               "httpMethod":"GET",
+               "nickname":"GetAllPlaceNames",
+               "responseClass":"ApiResponse<OrganisationTypes>",
+               "summary":"A list of Place Names",
+               "notes":"Returns a list of all valid locations",
+               "group":"words",
+               "parameters":[
+                  {
+                     "name":"user_key",
+                     "description":"Your access application key",
+                     "dataType":"string",
+                     "paramType":"header",
+                     "threescale_name":"user_keys",
+                     "required":true
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
