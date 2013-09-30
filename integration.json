@@ -1,5 +1,5 @@
 {
-    "basePath": "https://nhs.3scale.net/",
+    "basePath": "http://nhs-api.cloudapp.net",
     "apiVersion": "4.0",
     "apis": [
         {
