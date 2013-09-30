@@ -1,0 +1,194 @@
+{
+   "basePath":"http://3d79c66e59f24dc0b493ac429ce1f575.cloudapp.net",
+   
+   "apiVersion":"v1",
+    "apis":[
+      {    
+         "path":"/api/organisations",
+         "operations":[
+            {
+               "httpMethod":"GET",
+               "nickname":"AllOrgs",
+               "summary":"Returns all organisations",
+               "description":"<p>This operation returns all organisations",
+               "group":"words",
+               "parameters":[
+                {
+                     "name":"user_key",
+                     "description":"Your access application key",
+                     "dataType":"string",
+                     "paramType":"header",
+                     "threescale_name":"user_keys",
+                     "required":true
+                 }
+                 ]     
+            }
+         ]         
+      },
+      {
+         "path":"/api/organisations/{id}",
+         "operations":[
+            {
+               "httpMethod":"GET",
+               "summary":"Return an organisation by Id",
+ "nickname":"OrgbyID",
+               "description":"<p>This operation returns an organisation specified",
+               "group":"words",
+               "parameters":[
+                  {
+                     "name":"id",
+                     "description":"The HSCDS id of the Organisation",
+                     "dataType":"string",
+                     "paramType":"path",
+                     "required":true
+                  },
+                  {
+                     "name":"user_key",
+                     "description":"Your access application key",
+                     "dataType":"string",
+                     "paramType":"header",
+                     "threescale_name":"user_keys",
+                     "required":true
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "path":"/api/organisations/{Lat}/{Long}",
+         "operations":[
+            {
+               "httpMethod":"GET",
+               "summary":"Returns an organisation by Lat/Long",
+ "nickname":"OrgsLatLong",
+               "description":"<p>This operation returns an organisation specified",
+               "group":"words",
+               "parameters":[
+                  {
+                     "name":"Lat",
+                     "description":"The HSCDS id of the Organisation",
+                     "dataType":"string",
+                     "paramType":"path",
+                     "required":true
+                  },
+                  {
+                     "name":"Long",
+                     "description":"The HSCDS id of the Organisation",
+                     "dataType":"string",
+                     "paramType":"path",
+                     "required":true
+                  },
+                  {
+                     "name":"Service",
+                     "description":"The HSCDS Service id",
+                     "dataType":"string",
+                     "paramType":"query",
+                     "required":false
+                  },
+                  {
+                     "name":"Facility",
+                     "description":"The HSCDS Facility id",
+                     "dataType":"string",
+                     "paramType":"query",
+                     "required":false
+                  },
+                  {
+                     "name":"OrgType",
+                     "description":"The HSCDS Organisation Type code",
+                     "dataType":"string",
+                     "paramType":"query",
+                     "required":false
+                  },
+                  {
+                     "name":"Limit",
+                     "description":"The number of results to return up to a max of 50",
+                     "dataType":"string",
+                     "paramType":"query",
+                     "required":false
+                  },
+                  {
+                     "name":"Offset",
+                     "description":"The starting record number to return",
+                     "dataType":"string",
+                     "paramType":"query",
+                     "required":false
+                  },
+                  {
+                     "name":"user_key",
+                     "description":"Your access application key",
+                     "dataType":"string",
+                     "paramType":"header",
+                     "threescale_name":"user_keys",
+                     "required":true
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "path":"/api/organisations/{Location}",
+         "operations":[
+            {
+               "httpMethod":"GET",
+               "summary":"Returns organisations based on Location",
+ "nickname":"location",
+               "description":"<p>This operation returns a list of organisations based on a location.",
+               "group":"words",
+               "parameters":[
+                  {
+                     "name":"Location",
+                     "description":"The place name or Postcode of the location.",
+                     "dataType":"string",
+                     "paramType":"path",
+                     "required":true
+                  },
+                  {
+                     "name":"Service",
+                     "description":"The HSCDS Service id",
+                     "dataType":"string",
+                     "paramType":"query",
+                     "required":false
+                  },
+                  {
+                     "name":"Facility",
+                     "description":"The HSCDS Facility id",
+                     "dataType":"string",
+                     "paramType":"query",
+                     "required":false
+                  },
+                  {
+                     "name":"OrgType",
+                     "description":"The HSCDS Organisation Type code",
+                     "dataType":"string",
+                     "paramType":"query",
+                     "required":false
+                  },
+                  {
+                     "name":"Limit",
+                     "description":"The number of results to return up to a max of 50",
+                     "dataType":"string",
+                     "paramType":"query",
+                     "required":false
+                  },
+                  {
+                     "name":"Offset",
+                     "description":"The starting record number to return",
+                     "dataType":"string",
+                     "paramType":"query",
+                     "required":false
+                  },
+                  {
+                     "name":"user_key",
+                     "description":"Your access application key",
+                     "dataType":"string",
+                     "paramType":"header",
+                     "threescale_name":"user_keys",
+                      "required":true
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
+

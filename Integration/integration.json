@@ -1,0 +1,12 @@
+{
+    "basePath": "http://choices-swagger.azurewebsites.net",
+    "apiVersion": "4.0",
+    "apis": [
+        {
+            "path": "/integration/organisations.{format}",
+            "description": ""
+        }
+       
+    ],
+    "swaggerVersion": "1.0"
+}
