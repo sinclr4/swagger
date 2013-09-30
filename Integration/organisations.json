@@ -9,6 +9,17 @@
             {
                "httpMethod":"GET",
                "nickname":"AllOrgs",
+               "responseMessage":[
+  {
+    "code": 400,
+    "message": "Raised if a user supplies an invalid username format",
+    "responseModel": "Pet"
+  },
+  {
+    "code": 404,
+    "message": "The user cannot be found"
+  }
+],
                "summary":"Returns all organisations",
                "description":"<p>This operation returns all organisations",
                "group":"words",
