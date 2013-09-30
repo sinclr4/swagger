@@ -1,0 +1,30 @@
+{
+   "basePath":"http://nhs-api.cloudapp.net",
+   "resourcepath":"api/organisations",
+   "apiVersion":"v1",
+   "apis":[
+      {    
+         "path":"/api/organisations",
+         "operations":[
+            {
+               "httpMethod":"GET",
+               "summary":"Returns all organisations",
+               "nickname":"AllOrgs",
+               "description":"<p>This operation returns all organisations",
+               "group":"words",
+               "parameters":[
+                {
+                     "name":"user_key",
+                     "description":"Your access application key",
+                     "dataType":"string",
+                     "paramType":"header",
+                     "threescale_name":"user_keys",
+                     "required":true
+                 }
+                 ]     
+            }
+         ]         
+      
+      }
+   ]
+}

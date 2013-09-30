@@ -3,7 +3,7 @@
     "apiVersion": "4.0",
     "apis": [
         {
-            "path": "/api.json",
+            "path": "/organisations.{format}",
             "description": ""
         }
        
