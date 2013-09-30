@@ -1,9 +1,9 @@
 {
-    "basePath": "http://api.wordnik.com/v4",
+    "basePath": "https://nhs.3scale.net/",
     "apiVersion": "4.0",
     "apis": [
         {
-            "path": "https://nhs.3scale.net/api_docs/services/7441.json",
+            "path": "/api_docs/services/7441.json",
             "description": ""
         }
        
