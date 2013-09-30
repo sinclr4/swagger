@@ -3,7 +3,7 @@
     "apiVersion": "4.0",
     "apis": [
         {
-            "path": "/api_docs/services/7441.json",
+            "path": "/api.json",
             "description": ""
         }
        
