@@ -1,5 +1,5 @@
 {
-   "basePath":"http://api.2445580338212.proxy.3scale.net:80",
+   "basePath":"http://nhs-api.cloudapp.net",
    "apiVersion":"v1",
    "apis":[
       {
