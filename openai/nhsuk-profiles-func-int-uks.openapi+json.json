@@ -1,15 +1,11 @@
 {
     "openapi": "3.0.1",
     "info": {
-        "title": "nhsuk-profiles-func-int-uks",
+
         "description": "Import from \"nhsuk-profiles-func-int-uks\" Function App",
         "version": "1"
     },
-    "servers": [
-        {
-            "url": "https://nhsuk-apim-int-uks.azure-api.net/profile-internal"
-        }
-    ],
+    
     "paths": {
         "/audit/{timestamp}": {
             "get": {
