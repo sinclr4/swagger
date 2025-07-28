@@ -1,0 +1,890 @@
+{
+    "openapi": "3.0.1",
+  
+    "paths": {
+        "/{odscode}/services": {
+            "put": {
+                "summary": "Services",
+                "operationId": "put-services",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "get": {
+                "summary": "Services",
+                "operationId": "get-services",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/services/{Serviceid}": {
+            "post": {
+                "summary": "Service",
+                "operationId": "put-service",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "Serviceid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Service",
+                "operationId": "delete-service",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "Serviceid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odsCode}/organisationAlias": {
+            "get": {
+                "summary": "GetOrganisationAliases",
+                "operationId": "get-getorganisationaliases",
+                "parameters": [{
+                    "name": "odsCode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "UpdateOrganisationAliases",
+                "operationId": "put-updateorganisationaliases",
+                "parameters": [{
+                    "name": "odsCode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/facilities/{facilityid}": {
+            "get": {
+                "summary": "Facility",
+                "operationId": "get-facility",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "facilityid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Facility",
+                "operationId": "put-facility",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "facilityid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Facility",
+                "operationId": "delete-facility",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "facilityid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/openingtimes": {
+            "get": {
+                "summary": "OpeningTimes",
+                "operationId": "get-openingtimes",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "OpeningTimes",
+                "operationId": "put-openingtimes",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/contacts": {
+            "get": {
+                "summary": "Contacts",
+                "operationId": "get-contacts",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Contacts",
+                "operationId": "put-contacts",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/address": {
+            "get": {
+                "summary": "Address",
+                "operationId": "get-address",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Address",
+                "operationId": "put-address",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/facilities": {
+            "get": {
+                "summary": "Facilities",
+                "operationId": "get-facilities",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Facilities",
+                "operationId": "64106165f508ef9246d64b72",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}": {
+            "get": {
+                "summary": "Profile",
+                "operationId": "61d726141531324486ba6beb",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/openingtimes/bankholidays": {
+            "get": {
+                "summary": "OpeningTimesBankHolidays",
+                "operationId": "61dd7eb479702dfcba35d69d",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "OpeningTimesBankHolidays",
+                "operationId": "620cc8ffcf912ccb70726ff8",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/openingtimes/temporarychanges": {
+            "get": {
+                "summary": "OpeningTimesTemporaryChanges",
+                "operationId": "61dd7ef384888162a89cb534",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "OpeningTimesTemporaryChanges",
+                "operationId": "620cc91c58ebafe03f9fa944",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/openingtimes/standardhours": {
+            "get": {
+                "summary": "OpeningTimesStandardHours",
+                "operationId": "61dd7f11535abd40a7ea94fd",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "OpeningTimesStandardHours",
+                "operationId": "620cc89df3be9ac7286d9943",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/acceptingpatients": {
+            "get": {
+                "summary": "Accepting Patients",
+                "operationId": "6304d814422ff5e664b3d64e",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Accepting Patients",
+                "operationId": "6304d84662cebb68bd934e5c",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/uec-services": {
+            "get": {
+                "summary": "UEC Services",
+                "operationId": "63b70369ae831ce7898a1690",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "UEC Services",
+                "operationId": "63b703a22649838ec270705f",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/services/{srvcode}/keyvaluedata": {
+            "get": {
+                "summary": "Services KeyValueData All",
+                "operationId": "64a7e1b430e512eceee0c5e4",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "srvcode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/services/{srvcode}/keyvaluedata/{key}": {
+            "get": {
+                "summary": "Services KeyValueData",
+                "operationId": "64a7e1d33b95bcb1a8b3a1a9",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "srvcode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "key",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Services KeyValueData",
+                "operationId": "64a7e203945437514c5ecb81",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "srvcode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "key",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Services KeyValueData",
+                "operationId": "64a7e21e5b485f0427d726fd",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "srvcode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "key",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/services-list/{orgTypeId}/{orgSubTypeId}": {
+            "get": {
+                "summary": "Services Summary List",
+                "operationId": "64cccb23291e374deea2d9d6",
+                "parameters": [{
+                    "name": "orgTypeId",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "orgSubTypeId",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/services-list/{orgTypeId}": {
+            "get": {
+                "summary": "Services Summary List (no sub-type)",
+                "operationId": "64cccb520327509667730c5f",
+                "parameters": [{
+                    "name": "orgTypeId",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/service-opening-times": {
+            "get": {
+                "summary": "Service Opening Times All",
+                "operationId": "6686b7a3addd4ace7ca54c5f",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "Service Opening Times",
+                "operationId": "668e7aa3cd0511a7d05e7f76",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/service-opening-times/{id}": {
+            "get": {
+                "summary": "Service Opening Times",
+                "operationId": "668e7a70765555303c3d42fb",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Service Opening Times",
+                "operationId": "668e7ac7b3eeffed39090576",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Service Opening Times",
+                "operationId": "668e7d2948a6ab0e13dd800a",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/appointment-contacts/{appointmenttype}": {
+            "get": {
+                "summary": "Appointment Contacts",
+                "operationId": "68711f561517f5cfdb3eec49",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "appointmenttype",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Appointment Contacts",
+                "operationId": "68711f7470759c6c0e10b6a7",
+                "parameters": [{
+                    "name": "odscode",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }, {
+                    "name": "appointmenttype",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": ""
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "apiKeyHeader": {
+                "type": "apiKey",
+                "name": "Subscription-Key",
+                "in": "header"
+            },
+            "apiKeyQuery": {
+                "type": "apiKey",
+                "name": "subscription-key",
+                "in": "query"
+            }
+        }
+    },
+    "security": [{
+        "apiKeyHeader": []
+    }, {
+        "apiKeyQuery": []
+    }]
+}
