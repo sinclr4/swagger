@@ -1,0 +1,435 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "nhsuk-profiles-func-int-uks",
+        "description": "Import from \"nhsuk-profiles-func-int-uks\" Function App",
+        "version": "1"
+    },
+    "servers": [
+        {
+            "url": "https://nhsuk-apim-int-uks.azure-api.net/profile-internal"
+        }
+    ],
+    "paths": {
+        "/audit/{timestamp}": {
+            "get": {
+                "summary": "Audit",
+                "description": "Audit",
+                "operationId": "get-audit",
+                "parameters": [
+                    {
+                        "name": "timestamp",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/index": {
+            "post": {
+                "summary": "Index Update",
+                "description": "Index Update",
+                "operationId": "index-update",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/{odscode}/gpOnlineRegistrationStatus": {
+            "put": {
+                "summary": "GP Online Registration Status",
+                "description": "GP Online Registration Status",
+                "operationId": "62fca3729b41860c5d5c2994",
+                "parameters": [
+                    {
+                        "name": "odscode",
+                        "in": "path",
+                        "description": "The OdsCode of the GP to update",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "description": "The payload containing the GP's Online Registration status",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PutGpOnlineRegistration"
+                            },
+                            "example": {
+                                "AcceptingOnlineRegistrations": true
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "The profile was updated successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PutGpOnlineRegistrationResponse"
+                                },
+                                "example": {
+                                    "GPRegistration": {
+                                        "AcceptingOutOfArea": false,
+                                        "RegistrationLink": "https://register.test2.gp-registration.nhs.uk/Y03063"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "There was an issue with the provided request or profile record",
+                        "content": {
+                            "text/plain": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PutGpOnlineRegistrationResponse400"
+                                },
+                                "example": "There was an unhandled Exception."
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Unknown OdsCode provided.",
+                        "content": {
+                            "text/plain": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PutGpOnlineRegistrationResponse404"
+                                },
+                                "example": {
+                                    "No profile found with this ODSCode": "Z9999."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/{odscode}/gpOutOfAreaAcceptanceStatus": {
+            "put": {
+                "summary": "GP Out Of Area Status",
+                "description": "GP out of area Status, whether the GP accepts registrations from people outside of the catchment area",
+                "operationId": "6319f03a61f515df1f32ab97",
+                "parameters": [
+                    {
+                        "name": "odscode",
+                        "in": "path",
+                        "description": "The OdsCode of the GP to update",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "description": "The payload containing the GP's Out of area status",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PutGpOutOfAreaStatus"
+                            },
+                            "example": {
+                                "AcceptingOutOfArea": false
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "The profile was updated successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PutGpOutOfAreaStatusResponse"
+                                },
+                                "example": {
+                                    "GPRegistration": {
+                                        "AcceptingOutOfArea": false,
+                                        "RegistrationLink": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "There was an issue with the provided request or profile record",
+                        "content": {
+                            "text/plain": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PutGpOnlineRegistrationResponse400"
+                                },
+                                "example": "There was an unhandled Exception."
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Unknown OdsCode provided.",
+                        "content": {
+                            "text/plain": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PutGpOnlineRegistrationResponse404"
+                                },
+                                "example": {
+                                    "No profile found with this ODSCode": "Z9999."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/{odscode}/practicetype": {
+            "get": {
+                "summary": "Practice Type",
+                "operationId": "632c2dabd643f599d6574ee3",
+                "parameters": [
+                    {
+                        "name": "odscode",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Practice Type",
+                "operationId": "632c2e35ae7d1932fed7f28a",
+                "parameters": [
+                    {
+                        "name": "odscode",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/inserttempchanges": {
+            "post": {
+                "summary": "Insert PHA Temp Changes",
+                "operationId": "6374f658c76deee855d3b5e2",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/{odscode}/lastupdateddates": {
+            "get": {
+                "summary": "Last Updated Dates",
+                "operationId": "637b4855cf8a7d506aac7311",
+                "parameters": [
+                    {
+                        "name": "odscode",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Last Updated Dates",
+                "operationId": "637b4879fe79fb3b681541ad",
+                "parameters": [
+                    {
+                        "name": "odscode",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/gettrustchildorgs": {
+            "post": {
+                "summary": "Get Trust Child Orgs",
+                "operationId": "638f1ec3e57c10fd50a2229a",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/services/keyvaluedata/definitions": {
+            "get": {
+                "summary": "Service Key Definitions",
+                "operationId": "64a6bb43c4e71b00c1fc6fe9",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/resend-profiles-by-service": {
+            "post": {
+                "summary": "Resend Profiles By Service",
+                "operationId": "6511633219247d0e4951b9af",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/profile-list": {
+            "post": {
+                "summary": "Get Profile List",
+                "operationId": "65bd24910b9b5bc8f3aa7347",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/match-ods-codes": {
+            "post": {
+                "summary": "Match ODS Codes",
+                "operationId": "match-ods-codes",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "PutGpOnlineRegistration": {
+                "type": "object",
+                "properties": {
+                    "AcceptingOnlineRegistrations": {
+                        "type": "boolean"
+                    }
+                }
+            },
+            "PutGpOnlineRegistrationResponse": {
+                "type": "object",
+                "properties": {
+                    "GPRegistration": {
+                        "type": "object",
+                        "properties": {
+                            "AcceptingOutOfArea": {
+                                "type": "boolean"
+                            },
+                            "RegistrationLink": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "example": {
+                    "GPRegistration": {
+                        "AcceptingOutOfArea": false,
+                        "RegistrationLink": "https://register.test2.gp-registration.nhs.uk/Y03063"
+                    }
+                }
+            },
+            "PutGpOnlineRegistrationResponse404": {
+                "type": "string",
+                "example": "No profile found with this ODSCode: Z9999."
+            },
+            "PutGpOnlineRegistrationResponse400": {
+                "type": "string",
+                "example": "There was an unhandled Exception."
+            },
+            "PutGpOutOfAreaStatus": {
+                "type": "object",
+                "properties": {
+                    "AcceptingOutOfArea": {
+                        "type": "boolean"
+                    }
+                }
+            },
+            "PutGpOutOfAreaStatusResponse": {
+                "type": "object",
+                "properties": {
+                    "GPRegistration": {
+                        "type": "object",
+                        "properties": {
+                            "AcceptingOutOfArea": {
+                                "type": "boolean"
+                            },
+                            "RegistrationLink": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "example": {
+                    "GPRegistration": {
+                        "AcceptingOutOfArea": false,
+                        "RegistrationLink": "string"
+                    }
+                }
+            }
+        },
+        "securitySchemes": {
+            "apiKeyHeader": {
+                "type": "apiKey",
+                "name": "Subscription-Key",
+                "in": "header"
+            },
+            "apiKeyQuery": {
+                "type": "apiKey",
+                "name": "subscription-key",
+                "in": "query"
+            }
+        }
+    },
+    "security": [
+        {
+            "apiKeyHeader": []
+        },
+        {
+            "apiKeyQuery": []
+        }
+    ]
+}
