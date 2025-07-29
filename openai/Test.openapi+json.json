@@ -2,8 +2,8 @@
     "openapi": "3.0.1",
     "info": {
         "title": "Test",
-        "description": "Description here ",
-        "version": "1"
+        "description": "Description here "
+
     },
     "servers": [
         {
